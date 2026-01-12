@@ -1,0 +1,1454 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html { 
+    max-width: 1200px;
+    margin: 10px 320px ;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #FCFBFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 27px;
+}
+
+/* Лупа и список------------------------------------------------------ */
+
+.LOGO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.logo__name {
+    color: #244D4D;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+/* Меню--------------------------------------------- */
+
+.menu__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #161616;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto 120px;
+}
+
+.nav-links a {
+    color: #161616;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Поиск и меню--------------------------------------- */   
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search__img {
+    height: auto;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #244D4D;
+}
+
+/* Секция-------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    align-content: center;
+    max-width: 1200px;
+    height: 560px;
+    background-color: #154444;
+}
+
+.wrapper__img {
+    height: auto;
+    max-width: 411px;
+}
+
+.wrapper__img img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper__info {
+    display: flex;
+    max-width: 671px;
+    width: 100%;
+    height: 322px;
+    flex-direction: column;
+    margin: 111px 101px;
+}
+
+.wrapper__infoblock {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+}
+
+.wrapper__infoblock_1 {
+    color:#FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper__infoblock_2 {
+    color: #FFFFFF;
+    font-family: 'DM Sans';
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    max-width: 488px;
+}
+
+.btn__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 172px;
+    height: 90px;
+    border: none;
+}
+
+.explore__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.explore__btn_p {
+    color: #154444;
+    font-family: 'Dm Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    border: none;
+}
+
+.explore__btn:hover {
+    background-color: lightgrey;
+}
+
+@media(max-width:1745px) {
+    .wrapper__info {
+        height: 370px;
+    }
+
+    .wrapper__infoblock_1 {
+        font-size: 48px;
+    }
+}
+
+
+@media(max-width:1536px) {
+    .wrapper__info {
+        margin: 100px 51px;
+    }
+
+    .wrapper__infoblock_1 {
+        font-size: 44px;
+    }
+
+    .btn__more {
+        justify-content: flex-start;
+    }
+
+    .explore__btn {
+        width: 90%;
+        height: 50%;
+    }
+
+    .explore__btn_p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Спонсоры-------------------------------- */
+
+.wrapper_sponsor {
+    display: block;
+    margin-top: 140px;
+    width: 1050px;
+    height: 350px;
+}
+
+.sponsor {
+    display: block;
+    width: 1050px;
+    height: 50px;
+}
+
+.sponsor h1 {
+    text-align: center;
+    color: #244D4D;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 180px;
+}
+
+.images-sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 1150px;
+    margin-top: 30px;
+}
+
+.images-sponsor img:nth-child(1) {
+    height: 50px;
+}
+
+.images-sponsor img:nth-child(2) {
+    height: 45px;
+}
+
+.images-sponsor img:nth-child(3) {
+    height: 40px;
+}
+
+.images-sponsor img:nth-child(4) {
+    height: 30px;
+}
+
+.images-sponsor img:nth-child(5) {
+    height: 40px;
+}
+
+.images-sponsor img:nth-child(6) {
+    height: 35px;
+}
+
+.container {
+    display: flex;
+    width: 1145px;
+    height: 610px;
+    margin-left: 19px;
+    position: relative;
+}
+
+.images {
+    position: relative;
+    z-index: 2;
+}
+
+.figure {
+    position: absolute;
+    background-color: #DEE4E2;
+    height: 580px;
+    width: 630px;
+    top: 30px;
+    left: 0px;
+    z-index: 1;
+}
+
+.text-images {
+    display: block;
+    position: relative;
+    height: 517px;
+    width: 437px;
+    margin-left: 110px;
+    margin-top: 45px;
+}
+
+.box-1 {
+    margin-bottom: 40px;
+}
+
+.box-1 span {
+    font-size: 2rem;
+    color: #244D4D;
+    font-weight: 700;
+}
+
+.box-1 p {
+    font-size: 20px;
+    color: #444444;
+}
+
+.box-2 {
+    display: flex;
+    height: 98px;
+    margin-bottom: 30px;
+}
+
+.box-image{
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+
+.under-box{
+    display: block;
+    width: 280px;
+    height: 95px;
+    margin-left: 30px;
+}
+
+.under-box h1 {
+    font-size: 20px;
+    color: #244D4D;
+    height: 20px;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.under-box p {
+    font-size: 18px;
+    color: #383738;
+}
+
+.box-3 {
+    display: flex;
+    height: 98px;
+    margin-bottom: 30px;
+}
+
+#wrapper-image {
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.under-box-2 {
+    display: block;
+    width: 280px;
+    height: 95px;
+    margin-left: 30px;
+}
+
+.under-box-2 h1 {
+    font-size: 20px;
+    color: #244D4D;
+    height: 20px;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.under-box-2 p {
+    font-size: 18px;
+    color: #383738;
+}
+
+.box-4 {
+    display: flex;
+    height: 98px;
+    margin-bottom: 30px;
+}
+
+#wrapper-image-2 {
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.under-box-3 {
+    display: block;
+    width: 280px;
+    height: 95px;
+    margin-left: 30px;
+}
+
+.under-box-3 h1 {
+    font-size: 20px;
+    color: #244D4D;
+    height: 20px;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.under-box-3 p {
+    font-size: 18px;
+    color: #383738;
+}
+
+.search-wrapper {
+    display: block;
+    position: relative;
+    height: 800px;
+    width: 1180px;
+    margin-top: 150px;
+}
+
+.text-before-image{
+    display: block;
+    position: relative;
+    color: #000;
+    width: 1200px;
+    height: 220px;
+}
+
+.text-before-image h1 {
+    color: #000;
+    font-size: 32px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.text-before-image p {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "DM Sans";
+    width: 750px;
+    height: 100px;
+}
+
+.text-before-image button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#prev {
+    position: absolute;
+    top: 110px;
+    right: 130px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #F4F6F6;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;    
+}
+
+#next {
+    position: absolute;
+    top: 110px;
+    right: 70px; 
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+    background-color: #F4F6F6;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#next:hover {
+    background-color: #c4c3c3;
+}
+
+.shop-card {
+    display: block;
+    position: relative;
+    width: 380px;
+    height: 300px;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0,1);
+    box-shadow: 2px 2px 2px 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10p 20p rgba(0, 0, 0, 0, 2);
+}
+
+.shop-card img:nth-child(1) {
+    display: block;
+    position: relative;
+    padding-bottom: 23px;
+}
+
+.shop-card span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #242424;
+    font-family: "DM Sans";
+    padding-left: 24px;
+    width: 50px;
+    padding-right: 120px;
+}
+
+
+.Like {
+    display: flex;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    top: 267px;
+    right: 40px;
+    background-color: transparent;
+}
+
+
+
+.Share-link {
+    display: flex;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    top: 269px;
+    right: 10px;
+}
+
+.shop-card h1 {
+    position: absolute;
+    top: 335px;
+    left: 30px;
+    font-size: 24px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #154444;
+}
+
+#button-buy {
+    font-size: 12px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #fff;
+    background-color: #244D4D;
+    position: absolute;
+    top: 350px;
+    right: 15px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#button-buy:hover {
+    font-size: 14px;
+    padding: 12px 17px;
+    right: 10px;
+    top: 345px;
+}
+
+.shop-card-2 {
+    display: block;
+    position: absolute;
+    top: 220px;
+    left: 400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0,1);
+    box-shadow: 2px 2px 2px 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card-2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10p 20p rgba(0, 0, 0, 0, 2);
+}
+
+.shop-card-2 span {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    color:1 #242424;
+    font-family: "DM Sans";
+    width: 200px;
+    top: 270px;
+    left: 30px;
+}
+
+#Like {
+    position: absolute;
+    top: 267px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#Like img {
+    height: 25px;
+    width: 25px;
+}
+
+#Share-link {
+    position: absolute;
+    top: 269px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#Share-link img {
+    height: 20px;
+    width: 20px;
+}
+
+.shop-card-2 h1 {
+    position: absolute;
+    top: 335px;
+    left: 30px;
+    font-size: 24px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #154444;
+    width: 45px;
+    height: 30px;
+}
+
+#button-buy-2 {
+    font-size: 12px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #fff;
+    background-color: #244D4D;
+    position: absolute;
+    top: 350px;
+    right: 15px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#button-buy-2:hover {
+    font-size: 14px;
+    padding: 12px 17px;
+    right: 10px;
+    top: 345px;
+}
+
+.shop-card-3 {
+    display: block;
+    position: absolute;
+    top: 220px;
+    right: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0,1);
+    box-shadow: 2px 2px 2px 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card-3:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10p 20p rgba(0, 0, 0, 0, 2);
+}
+
+
+.shop-card-3 span {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    color:1 #242424;
+    font-family: "DM Sans";
+    width: 200px;
+    top: 270px;
+    left: 30px;
+}
+
+#Likes {
+    position: absolute;
+    top: 267px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#Likes img {
+    height: 25px;
+    width: 25px;
+}
+
+#Shares-links {
+    position: absolute;
+    top: 269px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#Shares-links img {
+    height: 20px;
+    width: 20px;
+}
+
+.shop-card-3 h1 {
+    position: absolute;
+    top: 335px;
+    left: 30px;
+    font-size: 24px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #154444;
+    width: 45px;
+    height: 30px;
+}
+
+#button-buy-3 {
+    font-size: 12px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #fff;
+    background-color: #244D4D;
+    position: absolute;
+    top: 350px;
+    right: 15px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#button-buy-3:hover {
+    font-size: 14px;
+    padding: 12px 17px;
+    right: 10px;
+    top: 345px;
+}
+
+.block {
+    display: block;
+    position: relative;
+    height: 600px;
+    width: 1230px;
+}
+
+.text-block {
+    font-weight: 700;  
+    font-family: "Montserrat";  
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+    color: #242424;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 880px;
+    height: 44px;
+    margin-left: 200px;
+}
+
+#Room {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 24px;
+    color: #154444;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+#Room::after {
+    content: "";
+    display: block;
+    width: 30%; /* длина линии */
+    height: 2px; /* толщина */
+    background-color: #17433D; /* цвет линии */
+    margin: 0 auto; /* центрируем */
+}
+
+#Category {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 24px;
+    color: #919090;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#Style {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 24px;
+    color: #919090;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.block-image {
+    display: flex;
+    position: absolute;
+    height: 450px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 20xp;
+    z-index: 10;
+}
+
+.green {
+    background-color: #154444;
+    height: 85px;
+    width: 190px;
+    position: absolute;
+    z-index: -1;
+    top: 19px;
+    left: 12px;
+}
+
+.green-1 {
+    background-color: #154444;
+    height: 85px;
+    width: 190px;
+    position: absolute;
+    z-index: -1;
+    top: 345px;
+    right: 12px;
+}
+
+.section-buttons {
+    display: block;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    top: 150px;
+    right: 0;
+    margin-top: 30px;
+}
+
+.section-buttons button{
+    width: 222px;
+    height: 80px;
+}
+
+.block-section-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px; /* расстояние между блоками */
+    max-width: 500px; /* для примера */
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+#living-room {
+    border: solid #D9DCE5 1.5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#living-room img {
+    position: absolute;
+    top: 60px;
+    left: 155px;
+}
+
+#living-room b {
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    color: #808080;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+#living-room:hover {
+    background-color: #D9DCE0;
+    border: solid rgba(0, 0, 0, 0.349) 1.5px;
+}
+
+#kitchen {
+    border: solid #D9DCE5 1.5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#kitchen img {
+    position: absolute;
+    top: 60px;
+    right: 155px;
+}
+
+#kitchen b {
+    position: absolute;
+    top: 100px;
+    right: 145px;
+    color: #808080;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+#kitchen:hover {
+    background-color: #D9DCE0;
+    border: solid rgba(0, 0, 0, 0.349) 1.5px;
+}
+
+#diving-room {
+    border: solid #D9DCE5 1.5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#diving-room img {
+    position: absolute;
+    top: 165px;
+    left: 155px;
+}
+
+#diving-room b {
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    color: #808080;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+#diving-room:hover {
+    background-color: #D9DCE0;
+    border: solid rgba(0, 0, 0, 0.349) 1.5px;
+}
+
+#Office {
+    background-color: #154444;
+    cursor: pointer;
+    border: none;
+}
+
+#Office img {
+    position: absolute;
+    top: 165px;
+    right: 155px;
+}
+
+#Office b {
+    position: absolute;
+    top: 200px;
+    right: 149px;
+    color: #FFFFFF;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+#Office:hover {
+    background-color: #226b6b;
+    border: solid rgba(0, 0, 0, 0.349) 1.5px;
+}
+
+#Bed-room {
+    border: solid #D9DCE5 1.5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#Bed-room img {
+    position: absolute;
+    top: 265px;
+    left: 155px;
+}
+
+#Bed-room b {
+    position: absolute;
+    top: 300px;
+    left: 138px;
+    color: #808080;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+#Bed-room:hover {
+    background-color: #D9DCE0;
+    border: solid rgba(0, 0, 0, 0.349) 1.5px;
+}
+
+#Hallway {
+    border: solid #D9DCE5 1.5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#Hallway img {
+    position: absolute;
+    top: 265px;
+    right: 155px;
+}
+
+
+#Hallway b {
+    position: absolute;
+    top: 300px;
+    right: 142px;
+    color: #808080;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+#Hallway:hover {
+    background-color: #D9DCE0;
+    border: solid rgba(0, 0, 0, 0.349) 1.5px;
+}
+
+.last-block {
+    display: block;
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    margin-top: 140px;
+}
+
+.last-block-image {
+    display: block;
+    width: 600px;
+    height: 500px;
+    }
+
+.cyrcle {
+    position: absolute;
+    background-color: #244D4D;
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+}
+
+.last-block-image img {
+    margin-left: 140px;
+    z-index: 10;
+}
+
+.text-block-last {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 500px;
+    height: 200px;
+}
+
+.text-block-last h1 {
+    color: #242424;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: "Montserrat";
+}
+
+.text-block-last p {
+    font-size: 20px;
+    font-family: "DM Sans";
+    font-weight: 400;
+    color: #242424;
+    width: 500px;
+}
+
+.last {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 350px;
+    right: 349px;
+    width: 150px;
+    height: 50px;
+    line-height: 0;
+}
+
+#last-image {
+    display: block;
+    width: 50xp;
+    height: 50px;
+}
+
+.Mh-Jibon {
+    align-items: flex-start;
+}
+
+#popstar {
+    position: absolute;
+    top: 30px;
+    left: 65px;
+    height: 16px;
+    width: 16px;
+}
+
+.review {
+    position: absolute;
+    top: 23px;
+    left: 85px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+
+.links {
+    margin-top: 150px;
+    height: 400px;
+    width: 1200px;
+}
+
+.links-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.links-button h1 {
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    width: 600px;
+    text-align: center;
+}
+
+.links-button p {
+    color: #222222;
+    width: 500px;
+    text-align: center;
+    font-family: "DM Sans";
+    line-height: 24px;   
+}
+
+.buttons-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+    width: 475px;
+}
+
+.buttons-links img {
+    height: 16px;
+    width: 16px;
+}
+
+.buttons-links input {
+    border: none;
+    width: 270px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.buttons-links button {
+    color: #FFFFFF;
+    background-color: #305F64;
+    font-family: "DM Sans";
+    font-weight: 500;
+    line-height: 22px;
+    width: 125px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons-links button:hover {
+    background-color: #3c7683;
+    border: solid rgba(34, 34, 34, 0.603) 1.5px;
+}
+
+.under-footer {
+    display: flex;
+    color: #fff;
+    background-color: #305F64;
+    position: absolute;
+    left: 0;
+    width: 1893px;
+    height: 500px;
+}
+
+.block-grid {
+    padding-top: 60px;
+    width: 300px;
+    margin-left: 120px;
+}
+
+.Dude {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.block-grid p {
+    font-family: "DM Sans";
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.folo {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-top: 30px;
+}
+
+.block-grid img {
+    padding-right: 10px;
+}
+
+.block-grid-1 {
+    display: block;
+    position: relative;
+    width: 300px;
+    margin-left: 150px;
+}
+
+.footer-ellements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 160px;
+    height: 220px;
+    color: #ffffff;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-left: 90px; 
+}
+
+.footer-ellements h1 {
+    font-size: 20px;
+    height: 20px;
+    line-height: 26px;
+    font-family: "Montserrat";
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.footer-ellements a:nth-child(2) {
+    margin: 0;
+    color: #ffffff;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.footer-ellements a:nth-child(3) {
+    margin: 0;
+    color: #ffffff;
+    padding-bottom: 16px;
+}
+
+.footer-ellements a:nth-child(4) {
+    margin: 0;
+    color: #ffffff;
+    padding-bottom: 16px;
+}
+
+.footer-ellements a:nth-child(5) {
+    margin: 0;
+    color: #ffffff;
+}
+
+.block-grid-2 {
+    display: block;
+    position: relative;
+    width: 300px;
+    margin-left: 110px;
+}
+
+.footer-ellements-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 160px;
+    height: 220px;
+    color: #ffffff;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-left: 90px; 
+}
+
+.footer-ellements-1 h1 {
+    font-size: 20px;
+    height: 20px;
+    line-height: 26px;
+    font-family: "Montserrat";
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.footer-ellements-1 a:nth-child(2) {
+    margin: 0;
+    color: #ffffff;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.footer-ellements-1 a:nth-child(3) {
+    margin: 0;
+    color: #ffffff;
+    padding-bottom: 16px;
+}
+
+.footer-ellements-1 a:nth-child(4) {
+    margin: 0;
+    color: #ffffff;
+    padding-bottom: 16px;
+}
+
+.footer-ellements-1 a:nth-child(5) {
+    margin: 0;
+    color: #ffffff;
+}
+
+.block-grid-3 {
+    display: block;
+    position: relative;
+    width: 300px;
+    margin-left: 150px;
+}
+
+.footer-ellements-2 h1 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 110px;
+    padding-bottom: 23px;
+}
+
+.footer-ellements-2 p {
+    width: 200px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 10px;
+}
+
+.footer-ellements-3 input {
+    height: 50px;
+    width: 290px;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 263px;
+    right: 30px;
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    border: solid rgba(0, 0, 0, 0.171) 0.1px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-grid, .block-grid-1, .block-grid-2, .block-grid-3 {
+    display: block;
+    position: relative;
+    height: 320px;
+}
+
+.line {
+    position: absolute;
+    background-color: #407980;
+    width: 1890px;
+    height: 1px;
+    top: 430px;
+}
+
+.last-text {
+    font-size: 14px;
+    position: absolute;
+    font-family: "DM Sams";
+    color: #ffffff;
+    width: auto;
+    top: 445px;
+    left: 730px;
+    height: 40px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

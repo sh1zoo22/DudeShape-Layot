@@ -2,12 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} } 
+@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
+@media screen and (max-width: 992px) { div.contentblock {width: 970px;} } 
+
+
+* {
+    /* outline: solid silver 2px; */
+}
+
 html { 
     max-width: 1200px;
     margin: 10px 320px ;
     padding: 0;
     font-family: sans-serif;
     background-color: #FCFBFF;
+
 }
 
 a {
@@ -297,7 +307,40 @@ body {
 
 }
 
+@media(max-width:1280px) {
+    .wrapper__info {
+        margin: 61px 30px;
+    }
 
+    .wrapper {
+        height: 411px;
+    }
+
+    .wrapper__img img {
+        width: 300px;
+    }
+
+    .wrapper__infoblock_1 {
+        font-size: 23px;
+    }
+
+    .wrapper__info {
+        height: 300px;
+    }
+
+    .LOGO {
+        width: 20%;
+    }
+
+    .logo__name {
+        font-size: 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+}
 
 
 
@@ -312,6 +355,122 @@ body {
 
 
 /* Спонсоры-------------------------------- */
+
+/* Выпадающее меню */
+
+.burger-menu {
+    display: none; /* По умолчанию скрываем палки */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1270px) {
+  
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    /* Если логотипа нет или нужно форсировать правую сторону: */
+    margin-left: auto; 
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Выпадает сразу под шапкой */
+    right: 0;   /* Прижимаем само выпадающее меню к правому краю */
+    width: 250px; /* Можно сделать на всю ширину или узким */
+    background: #fff;
+    padding: 20px;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Стили для палок (чтобы было красиво) */
+.burger-menu span {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* 2. МАГИЯ: Диапазон от 768px до 1270px */
+@media screen and (min-width: 768px) and (max-width: 1270px) {
+    .burger-menu {
+        display: flex; /* Показываем палки только тут */
+    }
+
+    .nav-links {
+        display: none; /* Прячем горизонтальное меню */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Настройте под высоту вашей шапки */
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    /* Класс, который вешает JavaScript */
+    .nav-links.active {
+        display: flex; 
+    }
+}
+
+/* 3. Для экранов больше 1270px (всё возвращается в ряд) */
+@media screen and (min-width: 1271px) {
+    .nav-links {
+        display: flex !important; /* Принудительно показываем */
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .burger-menu {
+        display: none !important;
+    }
+}
+
+@media(max-width:1271px) {
+    .search {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
 
 .wrapper_sponsor {
     display: block;

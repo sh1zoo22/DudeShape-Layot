@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="node.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,8 +21,14 @@
         <span class="logo__name">DudeShape</span>
     </div>
    
+    <div class="burger-menu" id="burger-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <div class="menu__container">
-        <nav class="nav-links">
+        <nav class="nav-links" id="nav-menu">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Features</a>
